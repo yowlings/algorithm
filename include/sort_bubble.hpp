@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <string.h>
 using namespace std;
 
 namespace sort {
@@ -9,12 +9,22 @@ class sort_bubble
 {
 public:
     sort_bubble(T *arr, int num) {
-        data = arr;
+        memcpy(data,arr,num);
         size = num;
     }
-    ~sort_bubble(){}
+    ~sort_bubble(){
 
-    void sort(){}
+    }
+
+    void sort(){
+        T temp;
+        for(int i=0,i<size,i++){
+            for(int j=size-1,j>i,j--){
+                if(data[j]<data[j-1])
+            }
+        }
+    }
+    void swap
     void print_result(){}
 
 private:
